@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Área</title>
+
+    <style>
+        .card-form{
+            display: flex;
+            align-items: center;
+        
+            width: 400px;
+            height: 350px;
+            margin: auto;
+            margin-top: 10%;
+            padding: auto;
+
+            background-color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            box-sizing: border-box;
+
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .inp{
+            width: 365px;
+        }
+        .cad{
+            margin: 5px;
+        }
+        .text{
+            margin-bottom: 25px;
+        }
+
+        /*Menssagens de alertas*/
+
+        .content{
+            width: 50%;
+        }
+        .alert-msg{
+            
+            display: flex;
+            text-align:center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-msg">
+    {{#if error}}
+        <div class="alert alert-danger content">{{error}}</div>
+    {{else}}
+
+    {{/if}}
+    
+    </div>
+
+    {{>_msg}}
+    {{{body}}}
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</html>

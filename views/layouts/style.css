@@ -1,0 +1,48 @@
+.card-form{
+    display: flex;
+    align-items: center;
+
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    margin-top: 10%;
+    padding: auto;
+
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.inp{
+    width: 365px;
+}
+.cad{
+    margin: 5px;
+}
+.text{
+    margin-bottom: 25px;
+}
+
+/*Menssagens de alertas*/
+
+.content{
+    width: 50%;
+  
+    position: absolute;
+}
+.alert-msg{
+    
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    
+}

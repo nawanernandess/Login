@@ -1,0 +1,36 @@
+
+    <div class="alert-msg">
+        {{#each erro}}
+            <div class="alert alert-danger content">{{text}}</div>
+        {{else}}
+
+        {{/each}}
+    </div>
+
+
+    <div class="card-form">
+        <form action="/adcinfo" method="POST" class="row g-3 cad">
+            <div class="col-md-6">
+                <input type="text" class="form-control text" id="nome" name="nome" id="nome" maxlength="30" placeholder="Nome">
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" class="form-control text" name="sobre" id="sobre" maxlength="30" placeholder="Sobrenome">
+            </div>
+
+            <div class="col-12">
+                <input type="email" class="form-control text" name="email" id="email" maxlength="40" placeholder="Email">
+            </div>
+
+            <div class="col-12">
+                <input type="password" class="form-control text" name="senha" id="senha" min="4" maxlength="8" placeholder="Senha">
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">CADASTRAR</button>
+            </div>
+
+            <a href="http://localhost:8080">Voltar para o login</a>
+
+        </form>
+    </div>
