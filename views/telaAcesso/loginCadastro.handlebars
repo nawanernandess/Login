@@ -1,0 +1,195 @@
+<style>
+    .flex{
+        display: flex;
+        height: 600px;
+    }
+
+    .img-center{
+        display: flex;
+        justify-content: center;
+    }
+
+    .padding{
+        padding-top: 45px;
+    }
+
+    /* .form-grid{
+        display: grid;
+        align-items: center;
+    } */
+
+    .ul-top{
+        top: 0;
+    }
+
+    .pagina-total{
+        height: 100%;
+
+        display: grid;
+        align-content: center;
+    }
+
+    .container-card-lenght{
+        width: 1026px !important;
+        height: 450px;
+
+        padding: 0 !important;
+    }
+
+    .space-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0 90px 16px 0;
+    }
+
+
+    .input-novo{
+        width: 100%;
+        background-color: transparent;
+        border:none;
+        border-bottom: 1px solid #e1e1e1;
+        outline: none;
+        color: rgb(5, 5, 5);
+    }
+
+    /*.btn{
+        background-color: transparent !important;
+        border:none !important;
+        border-bottom: 1px solid #260ff1 !important;
+        outline: none !important;
+        color: rgb(5, 5, 5) !important;
+    }*/
+
+    p{
+        font-size: 10px;
+        
+    }
+    h6{
+        font-size: 13px;
+    }
+
+    /*Button bootstrap*/
+    .btn{
+        width: 140px !important;
+        height: 45px !important;
+        border-radius: 1.25rem !important;
+    }
+    /* Alterando nav (bootstrap) */
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        border-radius: 0%;
+        background-color: transparent !important;
+        border:none !important;
+        border-bottom: 1px solid #260ff1 !important;
+        outline: none !important;
+        color: rgb(5, 5, 5) !important;
+    }
+    .nav-link{
+        color: gray !important;
+    }
+    .nav-link:focus, .nav-link:hover{
+        color: white !important;
+        font-weight: bold !important;
+    }
+</style>
+
+
+<div class="pagina-total">
+    <div class="container card container-card-lenght">
+        <div class="row flex">
+            <div class="col">
+                <ul class="nav nav-pills ul-top" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                    </li>
+                </ul>
+
+
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <form action="telaAcesso/loginCadastro" method="POST" class="padding">
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="email" class="input-novo" name="email" id="email" maxlength="30" placeholder="E-mail" >
+                                </div>
+                            </div>
+                            <div class="row mb-3" style="padding-top: 25px;">
+                                <div class="col-sm-10">
+                                    <input type="password" class="input-novo" id="inputPassword3" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+                                </div>
+                            </div>
+
+                            <div class="space-flex" style="padding-top: 25px;">
+                                <p><strong>MINHA SENHA</strong></p>
+                                <p><strong>ESQUECI MEU NOME DE USUÁRIO</strong></p>
+                            </div>
+
+                            <h6 style="padding-top: 25px;">Se preferir, entre com uma rede social:</h6>
+                            <div class="space-flex">
+                                <img src="https://img.olhardigital.com.br/uploads/acervo_imagens/2018/10/20181018233712.jpg" width="35px" height="25px" alt="email">
+                                <button type="submit" class="btn btn-success">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                            </div>
+                            <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                Check me out
+                                </label>
+                            </div>
+                            </div>
+                            <div class="col-12">
+                            <button type="submit" class="btn btn-success">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="col img-center">
+                <img src="https://png.pngtree.com/png-vector/20191003/ourlarge/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg" height="300px" width="400px" alt="Login">
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,28 +9,9 @@
     <title>Área</title>
 
     <style>
-        .card-form{
-            display: flex;
-            align-items: center;
-        
-            width: 400px;
-            height: 350px;
-            margin: auto;
-            margin-top: 10%;
-            padding: auto;
-
-            background-color: white;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-            box-sizing: border-box;
-
-        }
-        form{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        body, html{
+            height: 100%;
+            margin: 0%;
         }
         .inp{
             width: 365px;
@@ -55,9 +36,32 @@
             align-items: center;
             
         }
+
+        /*Estilo do background*/
+         .stl-bg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient( 45deg, #084177, #cd8d7b, #fbc490);
+            background-size: 300% 300%;
+            animation: colors 15s ease infinite;
+        }
+        @keyframes colors{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
     </style>
 </head>
-<body>
+<body class="stl-bg">
     <div class="alert-msg">
     {{#if error}}
         <div class="alert alert-danger content">{{error}}</div>

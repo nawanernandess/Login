@@ -1,29 +1,22 @@
-<div class="card-form">
-    
-    <form action="/login" method="POST" class="row g-3"> 
-        <p><strong>LOGIN</strong></p>
-            <div class="row mb-3">
-                <div class="col-sm-10">
-                    <input type="email" class="form-control inp" name="email" id="email" maxlength="30" placeholder="Email">
-                </div>
+<form action="/login" method="POST" class="row g-3"> 
+    <p><strong>LOGIN</strong></p>
+        <div class="row mb-3">
+            <div class="col-sm-10">
+                <input type="email" class="form-control inp" name="email" id="email" maxlength="30" placeholder="Email">
             </div>
-                
-            <div class="row mb-3">
-                <div class="col-sm-10">
-                    <input type="password" class="form-control inp" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
-                </div>
-            </div>
-        
-
-        <div class="move">
-            <button type="submit" class="btn btn-success">ENTRAR</button>
-            <hr>
         </div>
-                
-       <a href="http://localhost:8080/registro">Cadastre-se</a>
-    </form>
-</div>
-
-
+            
+        <div class="row mb-3">
+            <div class="col-sm-10">
+                <input type="password" class="form-control inp" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+            </div>
+        </div>
     
 
+    <div class="move">
+        <button type="submit" class="btn btn-success">ENTRAR</button>
+        <hr>
+    </div>
+            
+    <a href="http://localhost:8080/registro">Cadastre-se</a>
+</form>

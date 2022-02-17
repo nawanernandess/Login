@@ -11,10 +11,10 @@ router.get('/logado', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-    res.render('login')
+    res.render('telaAcesso/loginCadastro')
 })
 
-router.post("/login", (req, res, next) => {
+router.post("/telaAcesso/loginCadastro", (req, res, next) => {
     passport.authenticate("local", {
         successRedirect: "/logado",
         failureRedirect: "/",
