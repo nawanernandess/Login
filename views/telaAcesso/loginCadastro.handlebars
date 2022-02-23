@@ -176,48 +176,69 @@
                 </div>
                 
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
-                        </div>
+                    {{!-- <form class="row g-3" class="padding-top-form">
+
                         <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Nome">
                         </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" id="inputCity" placeholder="Sobrenome">
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+
                         <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <p class="p-social">Se preferir, entre com uma rede social:</p>
+                            <div class="space-flex">
+                                <span class="border"><i class="fa fa-google"></i></span>
+                                <button type="submit" class="btn btn-access">ENTRAR</button>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                    </form> --}}
+
+                    <form action="telaAcesso/loginCadastro" method="POST" class="padding-top-form">
+                        <div class="row mb-3">
+                            <div class="col-sm-10">
+                                <input type="email" class="input-novo" name="email" id="email" maxlength="30" placeholder="E-mail" autocomplete="off">
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
+                        <div class="row mb-3" style="padding-top: 25px;">
+                            <div class="col-sm-10">
+                                <input type="password" class="input-novo" id="inputPassword3" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <div class="row mb-3" style="padding-top: 25px;">
+                            <div class="col-sm-10">
+                                <input type="password" class="input-novo" id="inputPassword3" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+                            </div>
                         </div>
-                        <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                            Check me out
-                            </label>
+                        <div class="row mb-3" style="padding-top: 25px;">
+                            <div class="col-sm-10">
+                                <input type="password" class="input-novo" id="inputPassword3" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+                            </div>
                         </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
-                        <div class="col-12">
-                        <button type="submit" class="btn btn-success">Sign in</button>
+                        
+                        <p class="p-social">Se preferir, entre com uma rede social:</p>
+                        <div class="space-flex">
+                            <span class="border"><i class="fa fa-google"></i></span>
+                            <button type="submit" class="btn btn-access">ENTRAR</button>
                         </div>
                     </form>
                 </div>
