@@ -1,4 +1,6 @@
 <style>
+   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
     /* Alterando nav (bootstrap) */
     .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
         border-radius: 0%;
@@ -6,7 +8,7 @@
         border:none !important;
         border-bottom: 4px solid #7FFFD4 !important;
         outline: none !important;
-        color: #fff !important;
+        color: #e1e1e1 !important;
         font-weight: bold !important;
         
         padding-left: 0;
@@ -16,7 +18,7 @@
         color: gray !important;
     }
     .nav-link:focus, .nav-link:hover{
-        color: white !important;
+        color: #e1e1e1 !important;
         font-weight: bold !important;
 
         padding-right: 0;
@@ -29,7 +31,7 @@
         height: 60px !important;
         border-radius: 2.25rem !important;
 
-        color: #fff !important;
+        color: #e1e1e1 !important;
         font-size: 17px;
         font-weight: bold;
     }
@@ -86,12 +88,16 @@
     }
     .logo-h-center .logo-total .logo h1{
         font-size: 4rem;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        color: #e1e1e1;
     }
     .p-logo{
         margin: 0;
         display: grid;
         justify-content: right;
-        font-size: 21px;
+        font-size: 26px;
+        font-family:'Quicksand';
     }
 
     /*Espaçamento*/
@@ -106,7 +112,7 @@
     /*Modificando parágrafo*/
     p{
         font-size: 14px;  
-        color: #fff; 
+        color: #e1e1e1; 
     }
     .p-social{
         font-size: 16px;
@@ -130,7 +136,6 @@
     }
 </style>
 
-
 <div class="container container-card-lenght">
     <div class="row">
         <div class="col">
@@ -145,8 +150,6 @@
 
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    
-                    
                     <form action="telaAcesso/loginCadastro" method="POST" class="padding-top-form">
                         <div class="row mb-3">
                             <div class="col-sm-10">
@@ -219,17 +222,16 @@
                     </form>
                 </div>
             </div>
-
-            
         </div>
+        
         <div class="col logo-h-center">
             <div class="logo-total">
                 <div class="logo">
                     <h1>onStudy</h1>
                 </div>
 
-                <p class="p-logo">ESTUDANDO O SISTEMA DE</p>
-                <p class="p-logo">LOGIN COM NODE.JS</p>
+                <p class="p-logo">Estudando sistema de</p>
+                <p class="p-logo">login com node.js</p>
             </div>
         </div>
     </div>
