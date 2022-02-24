@@ -69,6 +69,15 @@
         outline: none;
         color: #fff;
     }
+    /*input check*/
+    .check-input{
+        background-color: transparent;
+        border-color: #e1e1e1;
+    }
+    .check-input:focus{
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
     input::placeholder{
         color: #e1e1e1;
     }
@@ -107,6 +116,10 @@
         align-items: center;
 
         margin: 25px 0px 16px 0;
+    }
+    .space-check{
+        margin: 16px 0px 0px 0px !important;
+        padding: 16px 0px 0px 24px;
     }
 
     /*Modificando parágrafo*/
@@ -176,31 +189,31 @@
                 </div>
                 
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <form action="telaAcesso/loginCadastro" method="POST" class="padding-top-form">
+                    <form action="/adcinfo" method="POST" class="padding-top-form">
                         <div class="row mb-3">
                             <div class="col-sm-10">
-                                <input type="email" class="input-novo" name="email" id="email" maxlength="30" placeholder="E-mail" autocomplete="off">
+                                <input type="text" class="input-novo" name="nome" id="nome" maxlength="30" placeholder="Nome" autocomplete="off">
                             </div>
                         </div>
                         <div class="row mb-3" style="padding-top: 25px;">
                             <div class="col-sm-10">
-                                <input type="password" class="input-novo" id="inputPassword3" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+                                <input type="text" class="input-novo" id="sobrenome" name="sobrenome" maxlength="30" placeholder="Sobrenome" autocomplete="off">
                             </div>
                         </div>
                         <div class="row mb-3" style="padding-top: 25px;">
                             <div class="col-sm-10">
-                                <input type="password" class="input-novo" id="inputPassword3" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+                                <input type="email" class="input-novo" id="email" name="email" maxlength="40" placeholder="E-mail" autocomplete="off">
                             </div>
                         </div>
                         <div class="row mb-3" style="padding-top: 25px;">
                             <div class="col-sm-10">
-                                <input type="password" class="input-novo" id="inputPassword3" name="senha" id="senha" min="4" max="8" maxlength="8" placeholder="Senha">
+                                <input type="password" class="input-novo" id="senha" name="senha" min="4" maxlength="8" placeholder="Senha">
                             </div>
                         </div>
 
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <div class="mb-3 form-check space-check">
+                            <input type="checkbox" class="form-check-input check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1" style="color: #e1e1e1;">Concordo com os <strong>Termos de Uso</strong> do onStudy</label>
                         </div>
                         
                         <p class="p-social">Se preferir, entre com uma rede social:</p>
